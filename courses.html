@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - PBK Learning</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+      body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f5f5f5;
+          color: #333;
+          line-height: 1.6;
+      }
+
+      .container {
+          width: 80%;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      /* Button Styles */
+      .btn {
+          display: inline-block;
+          padding: 10px 20px;
+          font-size: 16px;
+          color: #fff;
+          background-color: #007BFF;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+          background-color: #0056b3;
+      }
+
+              /* Courses Page */
+      .courses-container {
+          padding: 40px 20px;
+          background-color: #fff;
+      }
+
+      .courses-container h2 {
+          text-align: center;
+          font-size: 32px;
+          margin-bottom: 30px;
+      }
+
+      .course-grid {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 20px;
+      }
+
+      .course-card {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+          text-align: left;
+      }
+
+      .course-card img {
+          border-radius: 10px;
+          margin-bottom: 15px;
+      }
+
+      .course-card h3 {
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+
+      .course-card p {
+          font-size: 16px;
+          margin-bottom: 15px;
+      }
+      /* Responsive Design */
+      @media (max-width: 768px) {
+          .course-grid,
+          .dashboard-cards {
+              grid-template-columns: 1fr;
+          }
+
+          header nav ul {
+              flex-direction: column;
+              gap: 10px;
+              align-items: center;
+          }
+
+          .dashboard-card {
+              margin-bottom: 20px;
+          }
+
+          .admin-table {
+              display: block;
+              overflow-x: auto;
+          }
+      }
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo" class="logo-img"/></a></div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login/Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="container">
+    <section class="course-list">
+        <h2>All Courses</h2>
+        <div class="course-filters">
+            <input type="text" placeholder="Search for courses...">
+            <select>
+                <option value="all">All Fields</option>
+                <option value="tech">Technology</option>
+                <option value="business">Business</option>
+                <option value="design">Design</option>
+            </select>
+            <select>
+                <option value="all">All Levels</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+        </div>
+
+        <div class="course-grid">
+            <!-- Reuse course-card structure from the home page -->
+        </div>
+    </section>
+    <h1>Our Courses</h1>
+    <section class="courses-container">
+        <article class="course-card">
+            <img src="images/wb.jpg" alt="Web Development Course">
+            <div class="course-content">
+                <h3>Web Development</h3>
+                <p>Learn how to build responsive and modern websites using the latest technologies.</p>
+                <a href="course-web-development.html" class="btn">Learn More</a>
+            </div>
+        </article>
+        <!-- Additional course cards can be added here -->
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 PBK Learning. All rights reserved.</p>
+</footer>
+</body>
+</html>

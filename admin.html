@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+        /* Admin Page */
+.admin-container {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.admin-header h2 {
+    font-size: 28px;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-table th {
+    background-color: #f5f5f5;
+}
+
+.admin-table td {
+    background-color: #fff;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .course-grid,
+    .dashboard-cards {
+        grid-template-columns: 1fr;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .dashboard-card {
+        margin-bottom: 20px;
+    }
+
+    .admin-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+<section class="admin-panel">
+    <h2>Admin Panel</h2>
+    <div class="course-management">
+        <h3>Manage Courses</h3>
+        <!-- Forms and tables to manage courses -->
+    </div>
+
+    <div class="user-management">
+        <h3>Manage Users</h3>
+        <!-- List users with options to edit or delete -->
+    </div>
+</section>
+
+</body>
+</html>
